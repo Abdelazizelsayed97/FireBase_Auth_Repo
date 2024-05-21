@@ -11,6 +11,6 @@ class RegistrationUseCase {
   RegistrationUseCase(this._authRepositories);
 
   Future<Either<Failure, UserCredential>> execute(LoginInput input) async {
-    return await _authRepositories.register(input);
+    return await _authRepositories.registerViaEmail(input);
   }
 }

@@ -32,7 +32,8 @@ class AuthRepositoriesImpl implements AuthRepositories {
   }
 
   @override
-  Future<Either<Failure, UserCredential>> register(LoginInput input) async {
+  Future<Either<Failure, UserCredential>> registerViaEmail(
+      LoginInput input) async {
     try {
       final result = await _firebaseAuth.createUserWithEmailAndPassword(
         email: NetworkLoginInputModel.fromInput(input).email,
@@ -40,8 +41,35 @@ class AuthRepositoriesImpl implements AuthRepositories {
       );
       return Right(result);
     } catch (e) {
-      print(left(e.toString()));
       return Left(Failure(message: left.toString()));
+    }
+  }
+
+  @override
+  Future<Either<Failure, void>> registerViaPhone({
+    required String number,
+    required void Function(PhoneAuthCredential credential)
+        verificationCompleted,
+    required void Function(FirebaseAuthException exception) verificationFailed,
+    required void Function(String verificationId, int? forceResendingToken)
+        codeSent,
+    required void Function(String verificationId) codeAutoRetrievalTimeout,
+  }) async {
+    try {
+      await _firebaseAuth.verifyPhoneNumber(
+        phoneNumber: number,
+        verificationCompleted: verificationCompleted,
+        verificationFailed: verificationFailed,
+        codeSent: codeSent,
+        codeAutoRetrievalTimeout: codeAutoRetrievalTimeout,
+      );
+      return const Right(null);
+    } catch (error) {
+      return Left(
+        Failure(
+          message: left.toString(),
+        ),
+      );
     }
   }
 }

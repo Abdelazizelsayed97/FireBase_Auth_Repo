@@ -29,4 +29,10 @@ class AuthState with _$AuthState {
   const factory AuthState.logoutSuccess() = LogoutSuccess;
 
   const factory AuthState.logoutFailure(String message) = LogoutFailure;
+
+  const factory AuthState.phoneNumberSubmitted() = PhoneNumberSubmitted;
+
+  const factory AuthState.errorOccurred(String message) = ErrorOccurred;
+
+  const factory AuthState.phoneOTPVerified() = PhoneOTPVerified;
 }

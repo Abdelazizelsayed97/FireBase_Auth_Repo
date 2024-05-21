@@ -9,10 +9,15 @@
       "client_info": {
         "mobilesdk_app_id": "1:759504982996:android:222413c91d0bb1b62d7c41",
         "android_client_info": {
-          "package_name": "any.name.app"
+          "package_name": "com.example.auth_app_firebase"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "759504982996-qfgfdot9hd46gdejp1jrbp1382fpo371.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAxL8Yv3P1JemEeQN4v_txj_Xo_fAJXuL8"
@@ -20,7 +25,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759504982996-qfgfdot9hd46gdejp1jrbp1382fpo371.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759504982996-vpcrnano5hi6opaaqb9i831bmo8jdv40.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.authAppFirebase"
+              }
+            }
+          ]
         }
       }
     }

@@ -30,9 +30,11 @@ mixin _$AuthState {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
@@ -47,6 +49,9 @@ mixin _$AuthState {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,10 +68,12 @@ mixin _$AuthState {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(_Initial value) initial,
@@ -81,9 +88,11 @@ mixin _$AuthState {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) =>
       throw _privateConstructorUsedError;
-
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Initial value)? initial,
@@ -98,6 +107,9 @@ mixin _$AuthState {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -114,6 +126,9 @@ mixin _$AuthState {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -186,6 +201,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return initial();
   }
@@ -205,6 +223,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return initial?.call();
   }
@@ -224,6 +245,9 @@ class _$InitialImpl implements _Initial {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -247,6 +271,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return initial(this);
   }
@@ -266,6 +293,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return initial?.call(this);
   }
@@ -285,6 +315,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -348,6 +381,9 @@ class _$LoginInitialImpl implements _LoginInitial {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return loginInitial();
   }
@@ -367,6 +403,9 @@ class _$LoginInitialImpl implements _LoginInitial {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return loginInitial?.call();
   }
@@ -386,6 +425,9 @@ class _$LoginInitialImpl implements _LoginInitial {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginInitial != null) {
@@ -409,6 +451,9 @@ class _$LoginInitialImpl implements _LoginInitial {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return loginInitial(this);
   }
@@ -428,6 +473,9 @@ class _$LoginInitialImpl implements _LoginInitial {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return loginInitial?.call(this);
   }
@@ -447,6 +495,9 @@ class _$LoginInitialImpl implements _LoginInitial {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginInitial != null) {
@@ -510,6 +561,9 @@ class _$LoginLoadingImpl implements LoginLoading {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return loginLoading();
   }
@@ -529,6 +583,9 @@ class _$LoginLoadingImpl implements LoginLoading {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return loginLoading?.call();
   }
@@ -548,6 +605,9 @@ class _$LoginLoadingImpl implements LoginLoading {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginLoading != null) {
@@ -571,6 +631,9 @@ class _$LoginLoadingImpl implements LoginLoading {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return loginLoading(this);
   }
@@ -590,6 +653,9 @@ class _$LoginLoadingImpl implements LoginLoading {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return loginLoading?.call(this);
   }
@@ -609,6 +675,9 @@ class _$LoginLoadingImpl implements LoginLoading {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginLoading != null) {
@@ -699,6 +768,9 @@ class _$LoginSuccessImpl implements LoginSuccess {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return loginSuccess(credential);
   }
@@ -718,6 +790,9 @@ class _$LoginSuccessImpl implements LoginSuccess {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return loginSuccess?.call(credential);
   }
@@ -737,6 +812,9 @@ class _$LoginSuccessImpl implements LoginSuccess {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginSuccess != null) {
@@ -760,6 +838,9 @@ class _$LoginSuccessImpl implements LoginSuccess {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return loginSuccess(this);
   }
@@ -779,6 +860,9 @@ class _$LoginSuccessImpl implements LoginSuccess {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return loginSuccess?.call(this);
   }
@@ -798,6 +882,9 @@ class _$LoginSuccessImpl implements LoginSuccess {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginSuccess != null) {
@@ -893,6 +980,9 @@ class _$LoginFailureImpl implements LoginFailure {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return loginFailure(message);
   }
@@ -912,6 +1002,9 @@ class _$LoginFailureImpl implements LoginFailure {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return loginFailure?.call(message);
   }
@@ -931,6 +1024,9 @@ class _$LoginFailureImpl implements LoginFailure {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginFailure != null) {
@@ -954,6 +1050,9 @@ class _$LoginFailureImpl implements LoginFailure {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return loginFailure(this);
   }
@@ -973,6 +1072,9 @@ class _$LoginFailureImpl implements LoginFailure {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return loginFailure?.call(this);
   }
@@ -992,6 +1094,9 @@ class _$LoginFailureImpl implements LoginFailure {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (loginFailure != null) {
@@ -1060,6 +1165,9 @@ class _$RegisterInitialImpl implements _RegisterInitial {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return registerInitial();
   }
@@ -1079,6 +1187,9 @@ class _$RegisterInitialImpl implements _RegisterInitial {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return registerInitial?.call();
   }
@@ -1098,6 +1209,9 @@ class _$RegisterInitialImpl implements _RegisterInitial {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerInitial != null) {
@@ -1121,6 +1235,9 @@ class _$RegisterInitialImpl implements _RegisterInitial {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return registerInitial(this);
   }
@@ -1140,6 +1257,9 @@ class _$RegisterInitialImpl implements _RegisterInitial {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return registerInitial?.call(this);
   }
@@ -1159,6 +1279,9 @@ class _$RegisterInitialImpl implements _RegisterInitial {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerInitial != null) {
@@ -1222,6 +1345,9 @@ class _$RegisterLoadingImpl implements RegisterLoading {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return registerLoading();
   }
@@ -1241,6 +1367,9 @@ class _$RegisterLoadingImpl implements RegisterLoading {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return registerLoading?.call();
   }
@@ -1260,6 +1389,9 @@ class _$RegisterLoadingImpl implements RegisterLoading {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerLoading != null) {
@@ -1283,6 +1415,9 @@ class _$RegisterLoadingImpl implements RegisterLoading {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return registerLoading(this);
   }
@@ -1302,6 +1437,9 @@ class _$RegisterLoadingImpl implements RegisterLoading {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return registerLoading?.call(this);
   }
@@ -1321,6 +1459,9 @@ class _$RegisterLoadingImpl implements RegisterLoading {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerLoading != null) {
@@ -1384,6 +1525,9 @@ class _$RegisterSuccessImpl implements RegisterSuccess {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return registerSuccess();
   }
@@ -1403,6 +1547,9 @@ class _$RegisterSuccessImpl implements RegisterSuccess {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return registerSuccess?.call();
   }
@@ -1422,6 +1569,9 @@ class _$RegisterSuccessImpl implements RegisterSuccess {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerSuccess != null) {
@@ -1445,6 +1595,9 @@ class _$RegisterSuccessImpl implements RegisterSuccess {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return registerSuccess(this);
   }
@@ -1464,6 +1617,9 @@ class _$RegisterSuccessImpl implements RegisterSuccess {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return registerSuccess?.call(this);
   }
@@ -1483,6 +1639,9 @@ class _$RegisterSuccessImpl implements RegisterSuccess {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerSuccess != null) {
@@ -1573,6 +1732,9 @@ class _$RegisterFailureImpl implements RegisterFailure {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return registerFailure(message);
   }
@@ -1592,6 +1754,9 @@ class _$RegisterFailureImpl implements RegisterFailure {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return registerFailure?.call(message);
   }
@@ -1611,6 +1776,9 @@ class _$RegisterFailureImpl implements RegisterFailure {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerFailure != null) {
@@ -1634,6 +1802,9 @@ class _$RegisterFailureImpl implements RegisterFailure {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return registerFailure(this);
   }
@@ -1653,6 +1824,9 @@ class _$RegisterFailureImpl implements RegisterFailure {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return registerFailure?.call(this);
   }
@@ -1672,6 +1846,9 @@ class _$RegisterFailureImpl implements RegisterFailure {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (registerFailure != null) {
@@ -1740,6 +1917,9 @@ class _$LogoutLoadingImpl implements LogoutLoading {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return logoutLoading();
   }
@@ -1759,6 +1939,9 @@ class _$LogoutLoadingImpl implements LogoutLoading {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return logoutLoading?.call();
   }
@@ -1778,6 +1961,9 @@ class _$LogoutLoadingImpl implements LogoutLoading {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (logoutLoading != null) {
@@ -1801,6 +1987,9 @@ class _$LogoutLoadingImpl implements LogoutLoading {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return logoutLoading(this);
   }
@@ -1820,6 +2009,9 @@ class _$LogoutLoadingImpl implements LogoutLoading {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return logoutLoading?.call(this);
   }
@@ -1839,6 +2031,9 @@ class _$LogoutLoadingImpl implements LogoutLoading {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (logoutLoading != null) {
@@ -1902,6 +2097,9 @@ class _$LogoutSuccessImpl implements LogoutSuccess {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return logoutSuccess();
   }
@@ -1921,6 +2119,9 @@ class _$LogoutSuccessImpl implements LogoutSuccess {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return logoutSuccess?.call();
   }
@@ -1940,6 +2141,9 @@ class _$LogoutSuccessImpl implements LogoutSuccess {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (logoutSuccess != null) {
@@ -1963,6 +2167,9 @@ class _$LogoutSuccessImpl implements LogoutSuccess {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return logoutSuccess(this);
   }
@@ -1982,6 +2189,9 @@ class _$LogoutSuccessImpl implements LogoutSuccess {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return logoutSuccess?.call(this);
   }
@@ -2001,6 +2211,9 @@ class _$LogoutSuccessImpl implements LogoutSuccess {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (logoutSuccess != null) {
@@ -2090,6 +2303,9 @@ class _$LogoutFailureImpl implements LogoutFailure {
     required TResult Function() logoutLoading,
     required TResult Function() logoutSuccess,
     required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
   }) {
     return logoutFailure(message);
   }
@@ -2109,6 +2325,9 @@ class _$LogoutFailureImpl implements LogoutFailure {
     TResult? Function()? logoutLoading,
     TResult? Function()? logoutSuccess,
     TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
   }) {
     return logoutFailure?.call(message);
   }
@@ -2128,6 +2347,9 @@ class _$LogoutFailureImpl implements LogoutFailure {
     TResult Function()? logoutLoading,
     TResult Function()? logoutSuccess,
     TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (logoutFailure != null) {
@@ -2151,6 +2373,9 @@ class _$LogoutFailureImpl implements LogoutFailure {
     required TResult Function(LogoutLoading value) logoutLoading,
     required TResult Function(LogoutSuccess value) logoutSuccess,
     required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
   }) {
     return logoutFailure(this);
   }
@@ -2170,6 +2395,9 @@ class _$LogoutFailureImpl implements LogoutFailure {
     TResult? Function(LogoutLoading value)? logoutLoading,
     TResult? Function(LogoutSuccess value)? logoutSuccess,
     TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
   }) {
     return logoutFailure?.call(this);
   }
@@ -2189,6 +2417,9 @@ class _$LogoutFailureImpl implements LogoutFailure {
     TResult Function(LogoutLoading value)? logoutLoading,
     TResult Function(LogoutSuccess value)? logoutSuccess,
     TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
     required TResult orElse(),
   }) {
     if (logoutFailure != null) {
@@ -2205,4 +2436,576 @@ abstract class LogoutFailure implements AuthState {
   @JsonKey(ignore: true)
   _$$LogoutFailureImplCopyWith<_$LogoutFailureImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PhoneNumberSubmittedImplCopyWith<$Res> {
+  factory _$$PhoneNumberSubmittedImplCopyWith(_$PhoneNumberSubmittedImpl value,
+          $Res Function(_$PhoneNumberSubmittedImpl) then) =
+      __$$PhoneNumberSubmittedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PhoneNumberSubmittedImplCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$PhoneNumberSubmittedImpl>
+    implements _$$PhoneNumberSubmittedImplCopyWith<$Res> {
+  __$$PhoneNumberSubmittedImplCopyWithImpl(_$PhoneNumberSubmittedImpl _value,
+      $Res Function(_$PhoneNumberSubmittedImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PhoneNumberSubmittedImpl implements PhoneNumberSubmitted {
+  const _$PhoneNumberSubmittedImpl();
+
+  @override
+  String toString() {
+    return 'AuthState.phoneNumberSubmitted()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$PhoneNumberSubmittedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loginInitial,
+    required TResult Function() loginLoading,
+    required TResult Function(UserCredential? credential) loginSuccess,
+    required TResult Function(String message) loginFailure,
+    required TResult Function() registerInitial,
+    required TResult Function() registerLoading,
+    required TResult Function() registerSuccess,
+    required TResult Function(String message) registerFailure,
+    required TResult Function() logoutLoading,
+    required TResult Function() logoutSuccess,
+    required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
+  }) {
+    return phoneNumberSubmitted();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loginInitial,
+    TResult? Function()? loginLoading,
+    TResult? Function(UserCredential? credential)? loginSuccess,
+    TResult? Function(String message)? loginFailure,
+    TResult? Function()? registerInitial,
+    TResult? Function()? registerLoading,
+    TResult? Function()? registerSuccess,
+    TResult? Function(String message)? registerFailure,
+    TResult? Function()? logoutLoading,
+    TResult? Function()? logoutSuccess,
+    TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
+  }) {
+    return phoneNumberSubmitted?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loginInitial,
+    TResult Function()? loginLoading,
+    TResult Function(UserCredential? credential)? loginSuccess,
+    TResult Function(String message)? loginFailure,
+    TResult Function()? registerInitial,
+    TResult Function()? registerLoading,
+    TResult Function()? registerSuccess,
+    TResult Function(String message)? registerFailure,
+    TResult Function()? logoutLoading,
+    TResult Function()? logoutSuccess,
+    TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
+    required TResult orElse(),
+  }) {
+    if (phoneNumberSubmitted != null) {
+      return phoneNumberSubmitted();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_LoginInitial value) loginInitial,
+    required TResult Function(LoginLoading value) loginLoading,
+    required TResult Function(LoginSuccess value) loginSuccess,
+    required TResult Function(LoginFailure value) loginFailure,
+    required TResult Function(_RegisterInitial value) registerInitial,
+    required TResult Function(RegisterLoading value) registerLoading,
+    required TResult Function(RegisterSuccess value) registerSuccess,
+    required TResult Function(RegisterFailure value) registerFailure,
+    required TResult Function(LogoutLoading value) logoutLoading,
+    required TResult Function(LogoutSuccess value) logoutSuccess,
+    required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
+  }) {
+    return phoneNumberSubmitted(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_LoginInitial value)? loginInitial,
+    TResult? Function(LoginLoading value)? loginLoading,
+    TResult? Function(LoginSuccess value)? loginSuccess,
+    TResult? Function(LoginFailure value)? loginFailure,
+    TResult? Function(_RegisterInitial value)? registerInitial,
+    TResult? Function(RegisterLoading value)? registerLoading,
+    TResult? Function(RegisterSuccess value)? registerSuccess,
+    TResult? Function(RegisterFailure value)? registerFailure,
+    TResult? Function(LogoutLoading value)? logoutLoading,
+    TResult? Function(LogoutSuccess value)? logoutSuccess,
+    TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
+  }) {
+    return phoneNumberSubmitted?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_LoginInitial value)? loginInitial,
+    TResult Function(LoginLoading value)? loginLoading,
+    TResult Function(LoginSuccess value)? loginSuccess,
+    TResult Function(LoginFailure value)? loginFailure,
+    TResult Function(_RegisterInitial value)? registerInitial,
+    TResult Function(RegisterLoading value)? registerLoading,
+    TResult Function(RegisterSuccess value)? registerSuccess,
+    TResult Function(RegisterFailure value)? registerFailure,
+    TResult Function(LogoutLoading value)? logoutLoading,
+    TResult Function(LogoutSuccess value)? logoutSuccess,
+    TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
+    required TResult orElse(),
+  }) {
+    if (phoneNumberSubmitted != null) {
+      return phoneNumberSubmitted(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PhoneNumberSubmitted implements AuthState {
+  const factory PhoneNumberSubmitted() = _$PhoneNumberSubmittedImpl;
+}
+
+/// @nodoc
+abstract class _$$ErrorOccurredImplCopyWith<$Res> {
+  factory _$$ErrorOccurredImplCopyWith(
+          _$ErrorOccurredImpl value, $Res Function(_$ErrorOccurredImpl) then) =
+      __$$ErrorOccurredImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String message});
+}
+
+/// @nodoc
+class __$$ErrorOccurredImplCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$ErrorOccurredImpl>
+    implements _$$ErrorOccurredImplCopyWith<$Res> {
+  __$$ErrorOccurredImplCopyWithImpl(
+      _$ErrorOccurredImpl _value, $Res Function(_$ErrorOccurredImpl) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? message = null,
+  }) {
+    return _then(_$ErrorOccurredImpl(
+      null == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorOccurredImpl implements ErrorOccurred {
+  const _$ErrorOccurredImpl(this.message);
+
+  @override
+  final String message;
+
+  @override
+  String toString() {
+    return 'AuthState.errorOccurred(message: $message)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorOccurredImpl &&
+            (identical(other.message, message) || other.message == message));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, message);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorOccurredImplCopyWith<_$ErrorOccurredImpl> get copyWith =>
+      __$$ErrorOccurredImplCopyWithImpl<_$ErrorOccurredImpl>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loginInitial,
+    required TResult Function() loginLoading,
+    required TResult Function(UserCredential? credential) loginSuccess,
+    required TResult Function(String message) loginFailure,
+    required TResult Function() registerInitial,
+    required TResult Function() registerLoading,
+    required TResult Function() registerSuccess,
+    required TResult Function(String message) registerFailure,
+    required TResult Function() logoutLoading,
+    required TResult Function() logoutSuccess,
+    required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
+  }) {
+    return errorOccurred(message);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loginInitial,
+    TResult? Function()? loginLoading,
+    TResult? Function(UserCredential? credential)? loginSuccess,
+    TResult? Function(String message)? loginFailure,
+    TResult? Function()? registerInitial,
+    TResult? Function()? registerLoading,
+    TResult? Function()? registerSuccess,
+    TResult? Function(String message)? registerFailure,
+    TResult? Function()? logoutLoading,
+    TResult? Function()? logoutSuccess,
+    TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
+  }) {
+    return errorOccurred?.call(message);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loginInitial,
+    TResult Function()? loginLoading,
+    TResult Function(UserCredential? credential)? loginSuccess,
+    TResult Function(String message)? loginFailure,
+    TResult Function()? registerInitial,
+    TResult Function()? registerLoading,
+    TResult Function()? registerSuccess,
+    TResult Function(String message)? registerFailure,
+    TResult Function()? logoutLoading,
+    TResult Function()? logoutSuccess,
+    TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
+    required TResult orElse(),
+  }) {
+    if (errorOccurred != null) {
+      return errorOccurred(message);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_LoginInitial value) loginInitial,
+    required TResult Function(LoginLoading value) loginLoading,
+    required TResult Function(LoginSuccess value) loginSuccess,
+    required TResult Function(LoginFailure value) loginFailure,
+    required TResult Function(_RegisterInitial value) registerInitial,
+    required TResult Function(RegisterLoading value) registerLoading,
+    required TResult Function(RegisterSuccess value) registerSuccess,
+    required TResult Function(RegisterFailure value) registerFailure,
+    required TResult Function(LogoutLoading value) logoutLoading,
+    required TResult Function(LogoutSuccess value) logoutSuccess,
+    required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
+  }) {
+    return errorOccurred(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_LoginInitial value)? loginInitial,
+    TResult? Function(LoginLoading value)? loginLoading,
+    TResult? Function(LoginSuccess value)? loginSuccess,
+    TResult? Function(LoginFailure value)? loginFailure,
+    TResult? Function(_RegisterInitial value)? registerInitial,
+    TResult? Function(RegisterLoading value)? registerLoading,
+    TResult? Function(RegisterSuccess value)? registerSuccess,
+    TResult? Function(RegisterFailure value)? registerFailure,
+    TResult? Function(LogoutLoading value)? logoutLoading,
+    TResult? Function(LogoutSuccess value)? logoutSuccess,
+    TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
+  }) {
+    return errorOccurred?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_LoginInitial value)? loginInitial,
+    TResult Function(LoginLoading value)? loginLoading,
+    TResult Function(LoginSuccess value)? loginSuccess,
+    TResult Function(LoginFailure value)? loginFailure,
+    TResult Function(_RegisterInitial value)? registerInitial,
+    TResult Function(RegisterLoading value)? registerLoading,
+    TResult Function(RegisterSuccess value)? registerSuccess,
+    TResult Function(RegisterFailure value)? registerFailure,
+    TResult Function(LogoutLoading value)? logoutLoading,
+    TResult Function(LogoutSuccess value)? logoutSuccess,
+    TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
+    required TResult orElse(),
+  }) {
+    if (errorOccurred != null) {
+      return errorOccurred(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorOccurred implements AuthState {
+  const factory ErrorOccurred(final String message) = _$ErrorOccurredImpl;
+
+  String get message;
+  @JsonKey(ignore: true)
+  _$$ErrorOccurredImplCopyWith<_$ErrorOccurredImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PhoneOTPVerifiedImplCopyWith<$Res> {
+  factory _$$PhoneOTPVerifiedImplCopyWith(_$PhoneOTPVerifiedImpl value,
+          $Res Function(_$PhoneOTPVerifiedImpl) then) =
+      __$$PhoneOTPVerifiedImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PhoneOTPVerifiedImplCopyWithImpl<$Res>
+    extends _$AuthStateCopyWithImpl<$Res, _$PhoneOTPVerifiedImpl>
+    implements _$$PhoneOTPVerifiedImplCopyWith<$Res> {
+  __$$PhoneOTPVerifiedImplCopyWithImpl(_$PhoneOTPVerifiedImpl _value,
+      $Res Function(_$PhoneOTPVerifiedImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PhoneOTPVerifiedImpl implements PhoneOTPVerified {
+  const _$PhoneOTPVerifiedImpl();
+
+  @override
+  String toString() {
+    return 'AuthState.phoneOTPVerified()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PhoneOTPVerifiedImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loginInitial,
+    required TResult Function() loginLoading,
+    required TResult Function(UserCredential? credential) loginSuccess,
+    required TResult Function(String message) loginFailure,
+    required TResult Function() registerInitial,
+    required TResult Function() registerLoading,
+    required TResult Function() registerSuccess,
+    required TResult Function(String message) registerFailure,
+    required TResult Function() logoutLoading,
+    required TResult Function() logoutSuccess,
+    required TResult Function(String message) logoutFailure,
+    required TResult Function() phoneNumberSubmitted,
+    required TResult Function(String message) errorOccurred,
+    required TResult Function() phoneOTPVerified,
+  }) {
+    return phoneOTPVerified();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loginInitial,
+    TResult? Function()? loginLoading,
+    TResult? Function(UserCredential? credential)? loginSuccess,
+    TResult? Function(String message)? loginFailure,
+    TResult? Function()? registerInitial,
+    TResult? Function()? registerLoading,
+    TResult? Function()? registerSuccess,
+    TResult? Function(String message)? registerFailure,
+    TResult? Function()? logoutLoading,
+    TResult? Function()? logoutSuccess,
+    TResult? Function(String message)? logoutFailure,
+    TResult? Function()? phoneNumberSubmitted,
+    TResult? Function(String message)? errorOccurred,
+    TResult? Function()? phoneOTPVerified,
+  }) {
+    return phoneOTPVerified?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loginInitial,
+    TResult Function()? loginLoading,
+    TResult Function(UserCredential? credential)? loginSuccess,
+    TResult Function(String message)? loginFailure,
+    TResult Function()? registerInitial,
+    TResult Function()? registerLoading,
+    TResult Function()? registerSuccess,
+    TResult Function(String message)? registerFailure,
+    TResult Function()? logoutLoading,
+    TResult Function()? logoutSuccess,
+    TResult Function(String message)? logoutFailure,
+    TResult Function()? phoneNumberSubmitted,
+    TResult Function(String message)? errorOccurred,
+    TResult Function()? phoneOTPVerified,
+    required TResult orElse(),
+  }) {
+    if (phoneOTPVerified != null) {
+      return phoneOTPVerified();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_LoginInitial value) loginInitial,
+    required TResult Function(LoginLoading value) loginLoading,
+    required TResult Function(LoginSuccess value) loginSuccess,
+    required TResult Function(LoginFailure value) loginFailure,
+    required TResult Function(_RegisterInitial value) registerInitial,
+    required TResult Function(RegisterLoading value) registerLoading,
+    required TResult Function(RegisterSuccess value) registerSuccess,
+    required TResult Function(RegisterFailure value) registerFailure,
+    required TResult Function(LogoutLoading value) logoutLoading,
+    required TResult Function(LogoutSuccess value) logoutSuccess,
+    required TResult Function(LogoutFailure value) logoutFailure,
+    required TResult Function(PhoneNumberSubmitted value) phoneNumberSubmitted,
+    required TResult Function(ErrorOccurred value) errorOccurred,
+    required TResult Function(PhoneOTPVerified value) phoneOTPVerified,
+  }) {
+    return phoneOTPVerified(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_LoginInitial value)? loginInitial,
+    TResult? Function(LoginLoading value)? loginLoading,
+    TResult? Function(LoginSuccess value)? loginSuccess,
+    TResult? Function(LoginFailure value)? loginFailure,
+    TResult? Function(_RegisterInitial value)? registerInitial,
+    TResult? Function(RegisterLoading value)? registerLoading,
+    TResult? Function(RegisterSuccess value)? registerSuccess,
+    TResult? Function(RegisterFailure value)? registerFailure,
+    TResult? Function(LogoutLoading value)? logoutLoading,
+    TResult? Function(LogoutSuccess value)? logoutSuccess,
+    TResult? Function(LogoutFailure value)? logoutFailure,
+    TResult? Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult? Function(ErrorOccurred value)? errorOccurred,
+    TResult? Function(PhoneOTPVerified value)? phoneOTPVerified,
+  }) {
+    return phoneOTPVerified?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_LoginInitial value)? loginInitial,
+    TResult Function(LoginLoading value)? loginLoading,
+    TResult Function(LoginSuccess value)? loginSuccess,
+    TResult Function(LoginFailure value)? loginFailure,
+    TResult Function(_RegisterInitial value)? registerInitial,
+    TResult Function(RegisterLoading value)? registerLoading,
+    TResult Function(RegisterSuccess value)? registerSuccess,
+    TResult Function(RegisterFailure value)? registerFailure,
+    TResult Function(LogoutLoading value)? logoutLoading,
+    TResult Function(LogoutSuccess value)? logoutSuccess,
+    TResult Function(LogoutFailure value)? logoutFailure,
+    TResult Function(PhoneNumberSubmitted value)? phoneNumberSubmitted,
+    TResult Function(ErrorOccurred value)? errorOccurred,
+    TResult Function(PhoneOTPVerified value)? phoneOTPVerified,
+    required TResult orElse(),
+  }) {
+    if (phoneOTPVerified != null) {
+      return phoneOTPVerified(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PhoneOTPVerified implements AuthState {
+  const factory PhoneOTPVerified() = _$PhoneOTPVerifiedImpl;
 }

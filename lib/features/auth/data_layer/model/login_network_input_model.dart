@@ -22,3 +22,4 @@ class NetworkLoginInputModel {
 
   Map<String, dynamic> toJson() => _$NetworkLoginInputModelToJson(this);
 }
+

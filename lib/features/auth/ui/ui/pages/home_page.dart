@@ -1,7 +1,8 @@
-import 'package:auth_app_firebase/features/auth/login/cubit/auth_cubit.dart';
-import 'package:auth_app_firebase/features/auth/login/ui/pages/login_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import '../../cubit/auth_cubit.dart';
+import 'login/login_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
